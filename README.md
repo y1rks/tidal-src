@@ -1,0 +1,3 @@
+# tidal-src
+
+learning tidalcycles
