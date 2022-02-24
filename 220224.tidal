@@ -35,3 +35,13 @@ hush
 
 -- 4
 
+setcps(128/60/4)
+
+d1 $ stack [
+  n "1*16" # s "glitch" # speed 0.5,
+  n "3(3, 8, 1)" # s "glitch",
+  n "[~ 5] ~ [~ 5 ~ 5] ~" # s "glitch",
+  s "[hh ~ hh [hh ~]]*2"
+] # squiz 1.1 # gain 1.2
+
+hush
