@@ -1,0 +1,37 @@
+-- 1
+setcps 1
+
+d1 $ n "1 <~ 2> 3 <4 ~ 4*2>" # s "amencutup" # gain 1.5
+ # speed "0.5" 
+
+d2 $ s "house:5*8" # gain 1.5 # speed 0.8
+
+d3 $ s "house:5*8" # gain 1.8 # speed 0.1
+
+hush
+
+-- 2
+
+setcps 1.2
+
+d1 $ n "1 <~ 2> 3 <4 ~ 4*2>" # s "amencutup" # gain 1.5
+ # speed "0.5" 
+
+d2 $ n "0 0 0 0" # s "arpy" # speed "0.3"
+
+d3 $ n "<[0 0 0 0] [1 1 1 1]>" # s "arpy" # speed "0.2"
+
+hush
+
+-- 3
+
+setcps 0.6
+
+d1 $ n "0" # s "arp" # speed 0.4 # gain 3 # legato 1
+
+d2 $ n "2*32" # s "armora" # legato 1 # speed 0.7 # gain 1.1
+
+hush
+
+-- 4
+
