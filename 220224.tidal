@@ -45,3 +45,15 @@ d1 $ stack [
 ] # squiz 1.1 # gain 1.2
 
 hush
+
+-- 5
+
+setcps 0.5
+
+d1 $ stack [sound "arpy:0(16, 32, 0)", s "arpy:1(16, 32, 0)"] # speed (cosine) # room sine
+
+d2 $ s "hh(10, 16, 0)" # speed (sine + 1) # gain 0.9 # room sine * (-2) # pan sine
+
+d3 $ s "bass1? bass1?0.1 bass1 bass1? bass1 bass1? bass1? bass1?" # legato 1 # speed 0.6 # room 1.1 # gain 1.2
+
+d4 $ s "bd bd bd? bd" # gain 1.5 # room 0.1
